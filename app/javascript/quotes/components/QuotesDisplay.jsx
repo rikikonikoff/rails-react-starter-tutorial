@@ -26,7 +26,7 @@ class QuotesDisplay extends Component {
     if (this.qsParams.quote) {
       this.quoteId = Number(this.qsParams.quote);
     } else {
-      this.quoteId = 1;
+      this.quoteId = this.props.startingQuoteId;
       this.props.history.push(`?quote=${this.quoteId}`);
     }
   }
